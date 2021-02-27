@@ -1,0 +1,34 @@
+html {
+    background-color: pink;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+table {
+    margin: auto;
+    width: 80%;
+    
+}
+
+table, th, td {
+    border: 1px solid purple;
+}
+
+th {
+    height: 2em;
+    color: white;
+    background-color: rebeccapurple;
+}
+
+.code {
+    background-color: tan;
+    text-align: center;
+    color: blue;
+}

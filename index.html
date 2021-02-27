@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cheat sheet</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>HTML table reference</h1>
+        <h3>Table tags</h3>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr v-for="tag in tags">
+                <td class="code">{{ tag[0] }}</td>
+                <td>{{ tag[1] }}</td>
+                <td>{{ tag[2] }}</td>
+            </tr>
+        </table>
+        <h3>Table attributes</h3>
+        <table>
+            <tr>
+                <th>Attribute</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr v-for="attr in attrs">
+                <td class="code">{{ attr[0] }}</td>
+                <td>{{ attr[1] }}</td>
+                <td>{{ attr[2] }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Mount App -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+
+</html>
